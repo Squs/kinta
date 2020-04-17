@@ -1,0 +1,40 @@
+*,*:before,*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-box {
+  height: 100%;
+}
+
+.l-flex {
+  display: flex;
+}
+
+.main-container {
+  width: 100%;
+  height: calc(100% - 64px);
+}
+
+.kt-editor {
+  height: 100%;
+}
+
+.kt-markdown, .kt-preview {
+  width: calc(50vw);
+  height: 100%;
+  padding: 10px;
+}
+
+.kt-preview {
+  padding-left: 24px;
+}
