@@ -1,0 +1,126 @@
+{% extends "common/base.html" %}
+
+{% block content %}
+<div class="container">
+  <div class="row" style="margin-top: 1rem;">
+    <main class="col s7">
+      <!-- ----------検索エリア--------- -->
+      <form action="" class="row">
+        <input type="text" class="col s9" placeholder="キーワードを入力してください">
+        <button class="btn waves-effect waves-light col s3 blue lighten-1" type="submit" name="action">
+          <i class="material-icons left">search</i>検索
+        </button>
+      </form>
+      <!-- ----------検索エリア--------- -->
+
+
+      <!-- ----------記事エリア--------- -->
+      <div class="col s12">
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s4"><a href="#test1" class="black-text">すべて</a></li>
+              <li class="tab col s4"><a class="active black-text" href="#test2">ストック済み</a></li>
+              <li class="tab col s4">
+                <select class="browser-default">
+                  <option value="">新着順</option>
+                  <option value="1" selected>関連順</option>
+                  <option value="2">ストック数順</option>
+                  <option value="3">いいね順</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <img src="images/yuna.jpg" alt="" class="circle">
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle">folder</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle green">insert_chart</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <img src="images/yuna.jpg" alt="" class="circle">
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle">folder</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle green">insert_chart</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle red">play_arrow</i>
+              <span class="title">Title</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active blue lighten-1"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+      <!-- ----------記事エリア--------- -->
+    </main>
+    <aside class="col s5">
+      <hr>
+      <!-- ----------関連タグエリア--------- -->
+      <div class="reration-tags">
+        <div class="reration-tags--title">
+          <i class="tiny material-icons left">loyalty</i>関連タグ
+        </div>
+      </div>
+      <!-- ----------関連タグエリア--------- -->
+      <hr>
+      <!-- ----------検索オプションエリア--------- -->
+      <div class="search-option">
+        <div class="search-option--title">
+          検索オプション
+        </div>
+        <div>説明</div>
+      </div>
+      <!-- ----------検索オプションエリア--------- -->
+    </aside>
+  </div>
+</div>
+{% endblock %}
